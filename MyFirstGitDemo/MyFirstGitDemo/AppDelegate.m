@@ -17,6 +17,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    if (Show_LOG == 1) {
+        [DDLog addLogger:[DDASLLogger sharedInstance]];
+        [DDLog addLogger:[DDTTYLogger sharedInstance]];
+        [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    }
+    
+//    DDLogVerbose(@"test log");
+//    
+//    DDLogError(@"shguifdshgiusdhg");
+//    
+//    DDLogWarn(@"23232324");
+//
+//    DDLogVerbose(URL_RONGXIN);
+    
+    
     return YES;
 }
 

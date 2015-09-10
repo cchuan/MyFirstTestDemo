@@ -14,6 +14,8 @@
 		4E51D36D1BA13770003B50D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E51D36C1BA13770003B50D6 /* Images.xcassets */; };
 		4E51D3701BA13770003B50D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E51D36E1BA13770003B50D6 /* LaunchScreen.xib */; };
 		4E51D37C1BA13770003B50D6 /* MyFirstGitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E51D37B1BA13770003B50D6 /* MyFirstGitDemoTests.m */; };
+		4ED4A5AF1BA16CCD0032E9CA /* URLsAndGlobalKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4A5AE1BA16CCD0032E9CA /* URLsAndGlobalKeys.m */; };
+		E4B566E095A7DC20D2FE65C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE8DD305DE8025AE8C3F3F4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,13 @@
 		4E51D3751BA13770003B50D6 /* MyFirstGitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstGitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E51D37A1BA13770003B50D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E51D37B1BA13770003B50D6 /* MyFirstGitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFirstGitDemoTests.m; sourceTree = "<group>"; };
+		4ED4A5AB1BA169B70032E9CA /* MyFirstGitDemo_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFirstGitDemo_Prefix.pch; sourceTree = "<group>"; };
+		4ED4A5AC1BA16BCC0032E9CA /* GlobalSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalSetting.h; sourceTree = "<group>"; };
+		4ED4A5AD1BA16CCD0032E9CA /* URLsAndGlobalKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLsAndGlobalKeys.h; sourceTree = "<group>"; };
+		4ED4A5AE1BA16CCD0032E9CA /* URLsAndGlobalKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLsAndGlobalKeys.m; sourceTree = "<group>"; };
+		5EE8DD305DE8025AE8C3F3F4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C0EE4D86C58AD038D6B7F7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E20F314D92F922FE5943F5F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B566E095A7DC20D2FE65C3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +70,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F669596EB7DCE4D5B1E1B91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EE8DD305DE8025AE8C3F3F4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4E51D3531BA13770003B50D6 = {
 			isa = PBXGroup;
 			children = (
 				4E51D35E1BA13770003B50D6 /* MyFirstGitDemo */,
 				4E51D3781BA13770003B50D6 /* MyFirstGitDemoTests */,
 				4E51D35D1BA13770003B50D6 /* Products */,
+				EDD04172DBDF803EBBBC36EC /* Pods */,
+				1F669596EB7DCE4D5B1E1B91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +108,8 @@
 				4E51D3691BA13770003B50D6 /* Main.storyboard */,
 				4E51D36C1BA13770003B50D6 /* Images.xcassets */,
 				4E51D36E1BA13770003B50D6 /* LaunchScreen.xib */,
+				4ED4A5AD1BA16CCD0032E9CA /* URLsAndGlobalKeys.h */,
+				4ED4A5AE1BA16CCD0032E9CA /* URLsAndGlobalKeys.m */,
 				4E51D35F1BA13770003B50D6 /* Supporting Files */,
 			);
 			path = MyFirstGitDemo;
@@ -98,6 +120,8 @@
 			children = (
 				4E51D3601BA13770003B50D6 /* Info.plist */,
 				4E51D3611BA13770003B50D6 /* main.m */,
+				4ED4A5AB1BA169B70032E9CA /* MyFirstGitDemo_Prefix.pch */,
+				4ED4A5AC1BA16BCC0032E9CA /* GlobalSetting.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +143,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EDD04172DBDF803EBBBC36EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7C0EE4D86C58AD038D6B7F7 /* Pods.debug.xcconfig */,
+				E20F314D92F922FE5943F5F2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E51D37F1BA13770003B50D6 /* Build configuration list for PBXNativeTarget "MyFirstGitDemo" */;
 			buildPhases = (
+				115326BC0305CD090E040268 /* Check Pods Manifest.lock */,
 				4E51D3581BA13770003B50D6 /* Sources */,
 				4E51D3591BA13770003B50D6 /* Frameworks */,
 				4E51D35A1BA13770003B50D6 /* Resources */,
+				468EC32D4760A7E8A288D01D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,11 +249,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		115326BC0305CD090E040268 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		468EC32D4760A7E8A288D01D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E51D3581BA13770003B50D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED4A5AF1BA16CCD0032E9CA /* URLsAndGlobalKeys.m in Sources */,
 				4E51D3681BA13770003B50D6 /* ViewController.m in Sources */,
 				4E51D3651BA13770003B50D6 /* AppDelegate.m in Sources */,
 				4E51D3621BA13770003B50D6 /* main.m in Sources */,
@@ -345,8 +414,11 @@
 		};
 		4E51D3801BA13770003B50D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7C0EE4D86C58AD038D6B7F7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/cchuan/Documents/MyGithub/FirstDemo/MyFirstGitDemo/MyFirstGitDemo/MyFirstGitDemo_Prefix.pch;
 				INFOPLIST_FILE = MyFirstGitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,8 +427,11 @@
 		};
 		4E51D3811BA13770003B50D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20F314D92F922FE5943F5F2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/cchuan/Documents/MyGithub/FirstDemo/MyFirstGitDemo/MyFirstGitDemo/MyFirstGitDemo_Prefix.pch;
 				INFOPLIST_FILE = MyFirstGitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +491,7 @@
 				4E51D3811BA13770003B50D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E51D3821BA13770003B50D6 /* Build configuration list for PBXNativeTarget "MyFirstGitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +500,7 @@
 				4E51D3841BA13770003B50D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,24 @@
+//
+//  MyFirstGitDemo_Prefix.pch
+//  MyFirstGitDemo
+//
+//  Created by cchuan on 15/9/10.
+//  Copyright (c) 2015年 cchuan. All rights reserved.
+//
+
+#ifndef MyFirstGitDemo_MyFirstGitDemo_Prefix_pch
+#define MyFirstGitDemo_MyFirstGitDemo_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#ifdef __OBJC__
+    #import <CocoaLumberjack.h>
+
+    #import "GlobalSetting.h"
+    #import "URLsAndGlobalKeys.h"
+    #import <AFNetworking.h>
+
+#endif

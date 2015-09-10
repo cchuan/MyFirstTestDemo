@@ -9,19 +9,28 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *leftImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *rightImageView;
 
-@end
+@end 
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    DDLogVerbose(@"left:%f", self.leftImageView.frame.size.width);
+    DDLogVerbose(@"right:%f", self.rightImageView.frame.size.width);
 }
 
 @end
